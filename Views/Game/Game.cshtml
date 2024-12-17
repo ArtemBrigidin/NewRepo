@@ -1,0 +1,21 @@
+﻿@model GameModel
+
+@{
+    ViewData["Title"] = "Game";
+}
+
+@section HeadResources 
+{
+    <link rel="stylesheet" href="~/css/Game.css"/>
+    <script src="~/js/Game.js" type="module"></script>
+    <script src="~/js/keyboard.js" type="module"></script>
+}
+
+<div class="text-center GameContainer">
+    @{await Html.RenderPartialAsync("GameField", Model.GameFieldModel);}
+    @{await Html.RenderPartialAsync("GameFightField", Model.GameFightFieldModel);}
+</div>
+    <div class="GameButtons">
+        <button id="NewGameButton" type="button">New Game</button>
+    </div>
+

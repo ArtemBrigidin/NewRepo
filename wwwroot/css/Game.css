@@ -1,0 +1,71 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.GameField {
+    display: inline-grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    box-shadow: 5px 30px 50px #000;
+    width: 480px;
+    height: 480px;
+}
+
+.GameFieldCell {
+
+}
+
+.text-center {
+    width: 480px;
+    height: 480px;
+}
+
+main {
+    width: 480px;
+    height: 480px;
+}
+
+.specific-section, .pb-3 {
+    padding-bottom: 0 !important;
+}
+
+.container {
+    margin-bottom: 3rem;
+    width: 480px;
+    height: 480px;
+}
+
+.GameFightField{
+    z-index: 1;
+    position: relative;
+}
+
+.GameContainer{
+    display: grid;
+    grid-template: 1fr/1fr;
+    place-items: center;
+}
+
+.GameContainer>div{
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+
+.GameButtons{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+    width: 50vw;
+}

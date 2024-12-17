@@ -1,0 +1,26 @@
+﻿@using Tanki_ASP.NET.Models.Enums
+@model Tanki_ASP.NET.Models.Enums.CellTile
+<link rel="stylesheet" href="~/css/Field.css"/>
+
+@switch (Model)
+{
+	case CellTile.Brick:
+		<img id="Brick" src="~/images/Brick.png" draggable="false">
+		break;
+	case CellTile.Empty:
+		<img id="Empty" src="~/images/Empty.png" draggable="false">
+		break;
+	case CellTile.FriendlyBase:
+		<img id="FriendlyBase" src="~/images/FriendlyBase.png" draggable="false">
+		break;
+	case CellTile.EnemyBase:
+		<img id="EnemyBase" src="~/images/EnemyBase.png" draggable="false">
+		break;
+	case CellTile.BadRock:
+		<img id="BadRock" src="~/images/Badrock.png" draggable="false">
+		break;
+	case CellTile.Tank:
+		<img id="Tank" src="~/images/Tank.png" draggable="false" >
+		break;
+
+}
